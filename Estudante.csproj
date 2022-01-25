@@ -46,6 +46,7 @@
     <Compile Include="Aluno.cs" />
     <Compile Include="Boletim.cs" />
     <Compile Include="Disciplina.cs" />
+    <Compile Include="Endereco.cs" />
     <Compile Include="Escola.cs" />
     <Compile Include="EtapaAvaliacao.cs" />
     <Compile Include="Program.cs" />

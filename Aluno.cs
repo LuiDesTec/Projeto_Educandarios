@@ -7,14 +7,20 @@ using System.Threading.Tasks;
 
 namespace Estudante
 {
-    internal class Aluno
+    public  class Aluno
     {
         public string Nome { get; set; }
+        public string Matricula { get; set; }
+        public string Sexo { get; set; }
+        public string IdentidadeGenero { get; set; }
         public int Idade { get; private set; }
+
+
         public  BoletimNotas boletim { get; set; }//
 
-        public Aluno(string nome, int idade)
+        public Aluno(string nome, int idade, string matricula)
         {
+            Matricula = matricula;
             Nome = nome;
             SetIdade(idade);//
         }
@@ -23,6 +29,13 @@ namespace Estudante
             this.Nome = nome;
             this.Idade = 1000;
         }
+
+        public void SetMatricula(String Matricula)
+        {
+            this.Matricula = Matricula;
+
+        }
+
         public void SetIdade(int idade)
         {
             if (idade <= 0)

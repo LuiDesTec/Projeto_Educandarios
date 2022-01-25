@@ -11,41 +11,49 @@ namespace Estudante
         static void Main(string[] args)
         {
 
+            var EducandarioLuiz = new Escola("Educandário Luíz");
+
+            EducandarioLuiz.Endereco.Logradouro = "Rua são Mateus";
+            EducandarioLuiz.Endereco.Numero = "2";
+            EducandarioLuiz.Endereco.Cidade= "Salvador";
+            EducandarioLuiz.Endereco.CEP= "21456465";
+            EducandarioLuiz.Endereco.Estado= "Bahia";
+
+
+            var EducandarioSavastane = new Escola("Educandário Savastane");
+
+
+
+            var luiz = EducandarioLuiz.AddAluno("Luiz", 10);
+            var savastane = EducandarioLuiz.AddAluno("Savastane", 50);
+
             
-            var nada = new Disciplina("portugues");
+
+
+            var portugues = new Disciplina("portugues");
             var matematica = new Disciplina("matematica");
             var ciencias = new Disciplina("ciencias");
             var fisica = new Disciplina("fisica");
 
-            nada.Nome = "PORTUGUES1";
-
-            Console.WriteLine(nada.Nome);
-
-
-            Aluno luiz = new Aluno("Luiz", 50);
+            
+            
             luiz.boletim = new BoletimNotas();
-            new Disciplina("joao");
-
-
-            luiz.boletim.Disciplinas.Add(nada);
+            luiz.boletim.Disciplinas.Add(portugues);
             luiz.boletim.Disciplinas.Add(matematica);
             luiz.boletim.Disciplinas.Add(ciencias);
-            luiz.boletim.Disciplinas.Add(new Disciplina("História"));
-
-
-            var savastane = new Aluno("Savastane", 50);
-
-
-
+            
+            
             savastane.boletim = new BoletimNotas();
-
-            savastane.boletim.Disciplinas.Add(nada);
+            savastane.boletim.Disciplinas.Add(portugues);
             savastane.boletim.Disciplinas.Add(matematica);
             savastane.boletim.Disciplinas.Add(ciencias);
             savastane.boletim.Disciplinas.Add(fisica);
+            
 
             Console.WriteLine(luiz.Nome + ": " + luiz.boletim.getListaDisciplinas());
             Console.WriteLine(savastane.Nome + ": " + savastane.boletim.getListaDisciplinas());
+
+            Console.ReadKey();
 
         }
     }

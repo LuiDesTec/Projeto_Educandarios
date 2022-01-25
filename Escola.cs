@@ -6,9 +6,36 @@ using System.Threading.Tasks;
 
 namespace Estudante
 {
-    internal class Escola
+    public class Escola
     { 
-        public string nome { get; set; }
+        public string Nome { get; private set; }
+
+        public List<Aluno> Alunos { get; private set; }
+
+        public Endereco Endereco { get; set; }
+
+        
+
+        public Escola(string nomedaescola)
+        {
+            this.Nome = nomedaescola;
+            this.Alunos = new List<Aluno>();
+            this.Endereco = new Endereco();            
+        }
+
+        public Aluno AddAluno(string nome, int idade)
+        {
+            
+            // gerar o numero da matricula randomicamente de 0 a 2000
+            string matricula = new Random().Next(0, 2000).ToString();
+
+
+            var aluno = new Aluno(nome, idade, matricula);
+
+            this.Alunos.Add(aluno);
+
+            return this.Alunos.LastOrDefault();
+        }
 
     }
 }
