@@ -45,7 +45,9 @@
   <ItemGroup>
     <Compile Include="Aluno.cs" />
     <Compile Include="Boletim.cs" />
+    <Compile Include="Cursos.cs" />
     <Compile Include="Disciplina.cs" />
+    <Compile Include="Docentes.cs" />
     <Compile Include="Endereco.cs" />
     <Compile Include="Escola.cs" />
     <Compile Include="EtapaAvaliacao.cs" />

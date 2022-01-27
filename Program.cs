@@ -10,9 +10,15 @@ namespace Estudante
     {
         static void Main(string[] args)
         {
+           
+
+
+
+
+
 
             var EducandarioLuiz = new Escola("Educandário Luíz");
-
+           
             EducandarioLuiz.Endereco.Logradouro = "Rua são Mateus";
             EducandarioLuiz.Endereco.Numero = "2";
             EducandarioLuiz.Endereco.Cidade= "Salvador";
@@ -48,11 +54,13 @@ namespace Estudante
             savastane.boletim.Disciplinas.Add(matematica);
             savastane.boletim.Disciplinas.Add(ciencias);
             savastane.boletim.Disciplinas.Add(fisica);
-            
 
+            
+            
             Console.WriteLine(luiz.Nome + ": " + luiz.boletim.getListaDisciplinas());
             Console.WriteLine(savastane.Nome + ": " + savastane.boletim.getListaDisciplinas());
-
+            
+            
             Console.ReadKey();
 
         }
