@@ -10,26 +10,20 @@ namespace Estudante
     {
         static void Main(string[] args)
         {
-           
 
+            var EducandarioLuiz = new Escola("Endereco");
 
-
-
-
-
-            var EducandarioLuiz = new Escola("Educandário Luíz");
-           
-            EducandarioLuiz.Endereco.Logradouro = "Rua são Mateus";
-            EducandarioLuiz.Endereco.Numero = "2";
-            EducandarioLuiz.Endereco.Cidade= "Salvador";
-            EducandarioLuiz.Endereco.CEP= "21456465";
-            EducandarioLuiz.Endereco.Estado= "Bahia";
+            EducandarioLuiz.EscolaEndereco("Rua sao Mateus", "1", "salvador", "ba", "41334140");
 
 
             var EducandarioSavastane = new Escola("Educandário Savastane");
+            
+            EducandarioSavastane.EscolaEndereco("Rua D. Aline ", "2", "salvador", "ba", "41400001");
 
-
-
+            
+           
+            
+            
             var luiz = EducandarioLuiz.AddAluno("Luiz", 10);
             var savastane = EducandarioLuiz.AddAluno("Savastane", 50);
 
@@ -59,8 +53,8 @@ namespace Estudante
             
             Console.WriteLine(luiz.Nome + ": " + luiz.boletim.getListaDisciplinas());
             Console.WriteLine(savastane.Nome + ": " + savastane.boletim.getListaDisciplinas());
-            
-            
+            Console.WriteLine(EducandarioLuiz.Endereco.ToString());
+            Console.WriteLine(EducandarioSavastane.Endereco.ToString());
             Console.ReadKey();
 
         }

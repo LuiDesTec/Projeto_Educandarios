@@ -23,8 +23,8 @@ namespace Estudante
         public Escola(string nomedaescola)
         {
             this.Nome = nomedaescola;
-            this.Alunos = new List<Aluno>();
-            this.Endereco = new Endereco();
+            this.Alunos = new List<Aluno>();//Garantir que tenha a lista de alunos.
+            this.Endereco = new Endereco(); // Para garantir a criação do endereço.
             
         }
 
@@ -51,7 +51,7 @@ namespace Estudante
 
         public Endereco EscolaEndereco(string logradouro, string numero, string cidade, string estado, string cep)
         {
-
+           
 
                 
             this.Endereco.SetDados(logradouro, numero, cidade, estado, cep);

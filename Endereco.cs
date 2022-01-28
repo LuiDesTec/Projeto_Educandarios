@@ -25,7 +25,10 @@ namespace Estudante
 
 
         }
-
+        public override string ToString()
+        {
+            return Logradouro + " " + Numero + " " + CEP + " " + Cidade + " " + Estado;
+        }
 
     }
 
