@@ -14,7 +14,7 @@ namespace Estudante
             var EducandarioLuiz = new Escola("Endereco");
 
             EducandarioLuiz.EscolaEndereco("Rua sao Mateus", "1", "salvador", "ba", "41334140");
-
+           
 
             var EducandarioSavastane = new Escola("Educandário Savastane");
             
@@ -53,6 +53,7 @@ namespace Estudante
             
             Console.WriteLine(luiz.Nome + ": " + luiz.boletim.getListaDisciplinas());
             Console.WriteLine(savastane.Nome + ": " + savastane.boletim.getListaDisciplinas());
+            Console.WriteLine( "Escreva o Endereço das Escolas: ");
             Console.WriteLine(EducandarioLuiz.Endereco.ToString());
             Console.WriteLine(EducandarioSavastane.Endereco.ToString());
             Console.ReadKey();

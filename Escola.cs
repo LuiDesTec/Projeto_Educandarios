@@ -14,7 +14,7 @@ namespace Estudante
 
         public Endereco Endereco { get; private set; }
 
-
+        public Matricula Matricula { get; private set; }
 
 
 
@@ -57,6 +57,38 @@ namespace Estudante
             this.Endereco.SetDados(logradouro, numero, cidade, estado, cep);
 
             return this.Endereco;
+
+        }
+
+        /* Precisar de correções aí mais vê se a idéia é mais ou menos essa. Da uma olhada nas clasees o que 
+         precisa ser ajustado. No caso coloquei o metodo só pra ver se conseguia gerá-los dentro da classe 
+        escola. Mas vai precisar fazer os parametros receberem as disciplinas. Se não me engano.
+        Agora é com meu Senior as analises profissionais. */
+
+
+
+        public Matricula  SetMatricular ( Aluno aluno, Curso curso)
+
+
+        {
+
+
+
+            this.Matricula.Alunocursos(aluno, curso);
+
+            return this.Matricula;
+
+        }
+
+        public Matricula SetLecionar (Docentes docentes, Curso curso)
+
+        {
+
+
+
+            this.Matricula.DocenteCurso(docentes , curso);
+
+            return this.Matricula;
 
         }
 

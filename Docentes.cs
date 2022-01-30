@@ -6,23 +6,35 @@ using System.Threading.Tasks;
 
 namespace Estudante
 {
-    internal class Docentes
+    public class Docentes
     {
-        string Nome { get; set; }
-        string Materias { get; set; }
-        string Turmas { get; set; }
-    
-    
-    
-    public Docentes (string nome, string materia, string turma)
+        public string Nome { get; set; }
+        public string Sexo { get; set; }
+        public string IdentidadeGenero { get; set; }
+        public int Idade { get; private set; }
+        public Curso Curso { get; set; }  // Fiquei em dúvida se colocava curso ou displinas pela relação restritas entre os dois.
+
+        public Docentes (string nome, string sexo, int idade, string identidadeGenero)
+        {   
+            IdentidadeGenero = identidadeGenero;
+            this.Nome = nome;
+            this.Sexo = sexo;
+            this. idadedocente(idade);
+        }
+        
+
+        public void idadedocente(int idade) // A ideia é que um professor tem que ser maior de idade.
         {
-            Nome = nome;
-            Materias = materia;
-            Turmas = turma;
+            if (idade >= 18)
+            {
+
+                Idade = idade;
+
+            }
+            this.Idade = idade;
         }
     
     
     
     }
 }
-//Escola não existe sem professor né. Nem que seja em video aulas.
