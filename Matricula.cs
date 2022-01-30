@@ -10,23 +10,13 @@ namespace Estudante
     {
         public Aluno Aluno { get; set; }
         public Curso Curso { get; set; }
-        public Docentes Docente { get; set; }
 
 
-        public void Alunocursos (Aluno aluno, Curso curso)
+
+        public void Alunocursos(Aluno aluno, Curso curso)
         {
             this.Aluno = aluno;
             this.Curso = curso;
         }
-        
-        public void DocenteCurso (Docentes docente, Curso curso)
-        {
-           
-            {
-                this.Docente = docente;
-                this.Curso = curso;
-            }
-        }
-    
+
     }
-}

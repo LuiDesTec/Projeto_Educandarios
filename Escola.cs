@@ -25,7 +25,7 @@ namespace Estudante
             this.Nome = nomedaescola;
             this.Alunos = new List<Aluno>();//Garantir que tenha a lista de alunos.
             this.Endereco = new Endereco(); // Para garantir a criação do endereço.
-            
+
         }
 
         public Aluno AddAluno(string nome, int idade)
@@ -41,19 +41,19 @@ namespace Estudante
 
             return this.Alunos.LastOrDefault();
 
-            
 
 
-           
+
+
 
         }
 
 
         public Endereco EscolaEndereco(string logradouro, string numero, string cidade, string estado, string cep)
         {
-           
 
-                
+
+
             this.Endereco.SetDados(logradouro, numero, cidade, estado, cep);
 
             return this.Endereco;
@@ -67,7 +67,7 @@ namespace Estudante
 
 
 
-        public Matricula  SetMatricular ( Aluno aluno, Curso curso)
+        public Matricula SetMatricular(Aluno aluno, Curso curso)
 
 
         {
@@ -80,17 +80,8 @@ namespace Estudante
 
         }
 
-        public Matricula SetLecionar (Docentes docentes, Curso curso)
-
-        {
 
 
-
-            this.Matricula.DocenteCurso(docentes , curso);
-
-            return this.Matricula;
-
-        }
 
     }
 }
