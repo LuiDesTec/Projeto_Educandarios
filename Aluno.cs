@@ -10,7 +10,7 @@ namespace Estudante
     public  class Aluno
     {
         public string Nome { get; set; }
-        public string Matricula { get; set; }
+        public string Matricula { get; set; }// Precisaria ter uma relação com a classe Matricula aqui?
         public string Sexo { get; set; }
         public string IdentidadeGenero { get; set; }
         public int Idade { get; private set; }

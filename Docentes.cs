@@ -12,7 +12,7 @@ namespace Estudante
         public string Sexo { get; set; }
         public string IdentidadeGenero { get; set; }
         public int Idade { get; private set; }
-        public Curso Curso { get; set; }  // Fiquei em dúvida se colocava curso ou displinas pela relação restritas entre os dois.
+        public Curso Curso { get; set; }  
 
         public Docentes (string nome, string sexo, int idade, string identidadeGenero)
         {   
@@ -23,7 +23,7 @@ namespace Estudante
         }
         
 
-        public void idadedocente(int idade) // A ideia é que um professor tem que ser maior de idade.
+        public void idadedocente(int idade) 
         {
             if (idade >= 18)
             {
