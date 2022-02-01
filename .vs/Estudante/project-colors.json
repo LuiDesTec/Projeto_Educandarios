@@ -3,7 +3,11 @@
   "ProjectMap": {
     "5c3dcdd9-be96-4c97-8e14-d92ff6020bf7": {
       "ProjectGuid": "5c3dcdd9-be96-4c97-8e14-d92ff6020bf7",
+<<<<<<< HEAD
       "DisplayName": "Estudante",
+=======
+      "DisplayName": "ProjetoEducar",
+>>>>>>> 0344cf6a115c8300eac919e70c8cc2c06772fa33
       "ColorIndex": 0
     }
   },

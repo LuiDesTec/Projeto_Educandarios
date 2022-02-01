@@ -16,13 +16,13 @@ namespace Estudante
         public int Idade { get; private set; }
 
 
-        public  BoletimNotas boletim { get; set; }//
+        public  BoletimNotas boletim { get; set; }
 
         public Aluno(string nome, int idade, string matricula)
         {
             Matricula = matricula;
             Nome = nome;
-            SetIdade(idade);//
+            SetIdade(idade);
         }
         public Aluno(string nome)
         {
@@ -41,7 +41,7 @@ namespace Estudante
             if (idade <= 0)
             {
 
-                idade = 1; //
+                idade = 1; 
 
             }
             if (idade > 1000)

@@ -45,10 +45,13 @@
   <ItemGroup>
     <Compile Include="Aluno.cs" />
     <Compile Include="Boletim.cs" />
+    <Compile Include="Curso.cs" />
     <Compile Include="Disciplina.cs" />
+    <Compile Include="Docentes.cs" />
     <Compile Include="Endereco.cs" />
     <Compile Include="Escola.cs" />
     <Compile Include="EtapaAvaliacao.cs" />
+    <Compile Include="Matricula.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
