@@ -14,7 +14,7 @@ namespace Estudante
 
         public Endereco Endereco { get; private set; }
 
-        public Matricula Matricula { get; private set; }
+        public List<Matricula> Matriculas { get; private set; } = new List<Matricula>();
 
 
 
@@ -60,10 +60,7 @@ namespace Estudante
 
         }
 
-        /* Precisar de correções aí mais vê se a idéia é mais ou menos essa. Da uma olhada nas clasees o que 
-         precisa ser ajustado. No caso coloquei o metodo só pra ver se conseguia gerá-los dentro da classe 
-        escola. Mas vai precisar fazer os parametros receberem as disciplinas. Se não me engano.
-        Agora é com meu Senior as analises profissionais. */
+        
 
 
 
@@ -73,10 +70,11 @@ namespace Estudante
         {
 
 
+            Matricula matricula = new Matricula();
+            matricula.Alunocursos(aluno, curso);
+            this.Matriculas.Add(matricula);
 
-            this.Matricula.Alunocursos(aluno, curso);
-
-            return this.Matricula;
+            return matricula;
 
         }
 

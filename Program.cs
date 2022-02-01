@@ -11,14 +11,18 @@ namespace Estudante
         static void Main(string[] args)
         {
 
+
+            
+
             var EducandarioLuiz = new Escola("Endereco");
 
-            EducandarioLuiz.EscolaEndereco("Rua sao Mateus", "1", "salvador", "ba", "41334140");
-           
+            EducandarioLuiz.EscolaEndereco("Rua sao Mateus", "1", "salvador", "ba", "41334140");           
 
-            var EducandarioSavastane = new Escola("Educandário Savastane");
-            
+
+            var EducandarioSavastane = new Escola("Educandário Savastane");            
             EducandarioSavastane.EscolaEndereco("Rua D. Aline ", "2", "salvador", "ba", "41400001");
+
+
 
             
            
@@ -35,8 +39,23 @@ namespace Estudante
             var ciencias = new Disciplina("ciencias");
             var fisica = new Disciplina("fisica");
 
+            Curso Serie5 = new Curso();
+            Serie5.setDisciplinas(portugues);
+            Serie5.setDisciplinas(ciencias);
+            Serie5.setDisciplinas(matematica);
+            Serie5.setDisciplinas(fisica);
+
+            Curso Serie4 = new Curso();
+            Serie4.setDisciplinas("Redação");
+            Serie4.setDisciplinas("Ingles");
+
+            EducandarioLuiz.SetMatricular(luiz, Serie5);
+            EducandarioLuiz.SetMatricular(savastane, Serie4);
+
+
             
-            
+
+
             luiz.boletim = new BoletimNotas();
             luiz.boletim.Disciplinas.Add(portugues);
             luiz.boletim.Disciplinas.Add(matematica);
