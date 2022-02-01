@@ -8,12 +8,14 @@ namespace Estudante
 {
     public class Curso
     {
-        public List<Disciplina> Disciplinas { get; set; }
+        public List<Disciplina> Disciplinas { get; set; } = new List<Disciplina>();
 
-        public void setDisciplinas (List<Disciplina> disciplinas) 
+        public void setDisciplinas (Disciplina disciplinas) 
         
-        { 
-            this.Disciplinas = disciplinas;
+        {   
+             
+            
+            this.Disciplinas.Add( disciplinas);
         }
     
     
