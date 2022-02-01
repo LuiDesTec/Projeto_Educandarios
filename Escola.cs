@@ -14,7 +14,7 @@ namespace Estudante
 
         public Endereco Endereco { get; private set; }
 
-        public Matricula Matricula { get; private set; }
+        public List<Matricula> Matriculas { get; private set; } = new List<Matricula>();
 
 
 
@@ -73,10 +73,11 @@ namespace Estudante
         {
 
 
+            Matricula matricula = new Matricula();
+            matricula.Alunocursos(aluno, curso);
+            this.Matriculas.Add(matricula);
 
-            this.Matricula.Alunocursos(aluno, curso);
-
-            return this.Matricula;
+            return matricula;
 
         }
 
