@@ -5,6 +5,11 @@
       "ProjectGuid": "5c3dcdd9-be96-4c97-8e14-d92ff6020bf7",
       "DisplayName": "ProjetoEducar",
       "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Arquivos Diversos",
+      "ColorIndex": -1
     }
   },
   "NextColorIndex": 1

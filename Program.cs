@@ -12,7 +12,9 @@ namespace Estudante
         {
 
 
-            
+            Aluno idadealuno = new Aluno("",0,"");
+            idadealuno.DataDeNascimento = new DateTime(2018, 2, 3);
+            Console.WriteLine(idadealuno.GetIdade());
 
             var EducandarioLuiz = new Escola("Endereco");
 

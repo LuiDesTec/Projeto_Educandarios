@@ -7,14 +7,14 @@ using System.Threading.Tasks;
 
 namespace Estudante
 {
-    public  class Aluno
+    public  class Aluno : IPessoa
     {
         public string Nome { get; set; }
         public string Matricula { get; set; }// Precisaria ter uma relação com a classe Matricula aqui?
         public string Sexo { get; set; }
         public string IdentidadeGenero { get; set; }
         public int Idade { get; private set; }
-
+        public DateTime DataDeNascimento { get; set; }
 
         public  BoletimNotas boletim { get; set; }
 
@@ -52,5 +52,28 @@ namespace Estudante
             this.Idade = idade;
 
         }
+
+        public string GetNome(string nome)
+        {
+            Nome = nome;
+            return Nome;
+        }
+
+        public string GetIdade()
+        {
+            DateTime date3 = DateTime.Now;
+           
+
+           
+            
+            return date3.Year - DataDeNascimento.Year + "anos";
+        }
+
+        public string GetPapel()
+        {
+            throw new NotImplementedException();
+        }
+
+        
     }
 }

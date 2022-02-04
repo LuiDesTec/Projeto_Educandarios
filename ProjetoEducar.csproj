@@ -51,6 +51,7 @@
     <Compile Include="Endereco.cs" />
     <Compile Include="Escola.cs" />
     <Compile Include="EtapaAvaliacao.cs" />
+    <Compile Include="Interface1.cs" />
     <Compile Include="Matricula.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
