@@ -8,15 +8,16 @@ namespace Estudante
 {
     public interface IPessoa
     {
-        
-        string GetNome(string nome);
-        string GetIdade ();
-        string GetPapel ();
-       
-        
+        void SetPessoa(string nome, string sexo, DateTime datanascimento);
+        string GetNome();
+        string GetIdade();
+        string GetSexo();
 
-       
 
-      
+
+
+
+
+
     }
 }

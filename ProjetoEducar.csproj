@@ -47,10 +47,12 @@
     <Compile Include="Boletim.cs" />
     <Compile Include="Curso.cs" />
     <Compile Include="Disciplina.cs" />
-    <Compile Include="Docentes.cs" />
+    <Compile Include="Docente.cs" />
     <Compile Include="Endereco.cs" />
     <Compile Include="Escola.cs" />
     <Compile Include="EtapaAvaliacao.cs" />
+    <Compile Include="Funcionario.cs" />
+    <Compile Include="IFuncao.cs" />
     <Compile Include="IPessoa.cs" />
     <Compile Include="Matricula.cs" />
     <Compile Include="Pessoa.cs" />

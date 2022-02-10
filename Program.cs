@@ -12,8 +12,15 @@ namespace Estudante
         {
 
 
-            Aluno idadealuno = new Aluno("",0,"");
-            idadealuno.DataDeNascimento = new DateTime(2018, 2, 3);
+            Pessoa pessoalqualquer = new Pessoa("Savastane", "masculino",  new DateTime(1973, 07, 24));
+
+            Console.WriteLine(pessoalqualquer.Nome);
+            Console.WriteLine(pessoalqualquer.GetIdade());
+            
+
+
+            Aluno idadealuno = new Aluno("","", new DateTime(2018, 2, 3));
+            
             Console.WriteLine(idadealuno.GetIdade());
 
             var EducandarioLuiz = new Escola("Endereco");
@@ -26,14 +33,15 @@ namespace Estudante
 
 
 
-            
-           
-            
-            
-            var luiz = EducandarioLuiz.AddAluno("Luiz", 10);
-            var savastane = EducandarioLuiz.AddAluno("Savastane", 50);
+
+
 
             
+            Aluno luiz = EducandarioLuiz.AddAluno("Luiz", "masculino", new DateTime(1976, 12, 13));
+            var savastane = EducandarioLuiz.AddAluno("Savastane", "masculino" , new DateTime(1973, 7, 24));
+
+            Console.WriteLine("luiz");
+            Console.WriteLine(luiz.GetIdade());
 
 
             var portugues = new Disciplina("portugues");
@@ -54,8 +62,11 @@ namespace Estudante
             EducandarioLuiz.SetMatricular(luiz, Serie5);
             EducandarioLuiz.SetMatricular(savastane, Serie4);
 
-
             
+
+
+
+
 
 
             luiz.boletim = new BoletimNotas();
@@ -70,13 +81,39 @@ namespace Estudante
             savastane.boletim.Disciplinas.Add(ciencias);
             savastane.boletim.Disciplinas.Add(fisica);
 
+
+            Docente professor = new Docente("Savastane", "masculino", new DateTime(1973, 07, 24));
             
-            
-            Console.WriteLine(luiz.Nome + ": " + luiz.boletim.getListaDisciplinas());
-            Console.WriteLine(savastane.Nome + ": " + savastane.boletim.getListaDisciplinas());
-            Console.WriteLine( "Escreva o Endereço das Escolas: ");
-            Console.WriteLine(EducandarioLuiz.Endereco.ToString());
-            Console.WriteLine(EducandarioSavastane.Endereco.ToString());
+            //Console.WriteLine(professor.GetNome());
+            //Console.WriteLine(professor.GetIdade());
+            //Console.WriteLine(professor.GetFuncao());
+
+            Funcionario funcionario = new Funcionario("Savastane", "masculino", new DateTime(1973, 07, 24));
+
+            //Console.WriteLine(funcionario.GetNome());
+            //Console.WriteLine(funcionario.GetIdade());
+            //Console.WriteLine(funcionario.GetFuncao());
+
+
+            Aluno alunoluiz = EducandarioLuiz.AddAluno("Luiz", "masculino", new DateTime(1976, 12, 13));
+
+
+            var Tipoclasse = EducandarioLuiz.AddPessoa(alunoluiz);
+            Console.WriteLine(Tipoclasse);
+
+            var Tipoclasse1 = EducandarioLuiz.AddPessoa(funcionario);
+            Console.WriteLine(Tipoclasse1);
+
+
+
+            IPessoa pessoalqualquer1 = new Aluno("Savastane", "masculino", new DateTime(1973, 07, 24));
+
+
+            //Console.WriteLine(luiz.Nome + ": " + luiz.boletim.getListaDisciplinas());
+            //Console.WriteLine(savastane.Nome + ": " + savastane.boletim.getListaDisciplinas());
+            //Console.WriteLine( "Escreva o Endereço das Escolas: ");
+            //Console.WriteLine(EducandarioLuiz.Endereco.ToString());
+            //Console.WriteLine(EducandarioSavastane.Endereco.ToString());
             Console.ReadKey();
 
         }

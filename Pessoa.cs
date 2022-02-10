@@ -6,27 +6,46 @@ using System.Threading.Tasks;
 
 namespace Estudante
 {
-     class Pessoa : IPessoa
+    public class Pessoa : IPessoa
     {
-      
+        public string Nome { get; set; }
+        public string Sexo { get; set; }
+        
+        public DateTime DataDeNascimento { get; set; }
 
-        
-        
-        
-        
+        public Pessoa(string nome, string sexo, DateTime datanascimento)
+        {
+            this.Nome = nome;   
+            this.Sexo = sexo;   
+            
+            this.DataDeNascimento = datanascimento;
+
+        }
+
+        public void SetPessoa(string nome, string sexo, DateTime datanascimento)
+        {
+            this.Nome = nome;
+            this.Sexo = sexo;
+            this.DataDeNascimento = datanascimento;
+        }
+
         public string GetIdade()
-        {
-            throw new NotImplementedException();
+        {   
+            return DateTime.Now.Year - DataDeNascimento.Year + " years old";
         }
 
-        public string GetNome(string nome)
+        public string GetNome()
         {
-            throw new NotImplementedException();
+            return this.Nome;
         }
 
-        public string GetPapel()
+        public string GetSexo()
         {
-            throw new NotImplementedException();
+            return this.Sexo;
         }
+
+   
+
+     
     }
 }
