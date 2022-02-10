@@ -60,10 +60,7 @@ namespace Estudante
 
         }
 
-        /* Precisar de correções aí mais vê se a idéia é mais ou menos essa. Da uma olhada nas clasees o que 
-         precisa ser ajustado. No caso coloquei o metodo só pra ver se conseguia gerá-los dentro da classe 
-        escola. Mas vai precisar fazer os parametros receberem as disciplinas. Se não me engano.
-        Agora é com meu Senior as analises profissionais. */
+        
 
 
 

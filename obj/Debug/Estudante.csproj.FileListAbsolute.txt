@@ -1,8 +1,0 @@
-C:\Users\luide\OneDrive\Documentos\C#\TESTS\Estudante\Estudante\obj\Debug\Estudante.csproj.AssemblyReference.cache
-C:\Users\luide\OneDrive\Documentos\C#\TESTS\Estudante\Estudante\obj\Debug\Estudante.csproj.SuggestedBindingRedirects.cache
-C:\Users\luide\OneDrive\Documentos\C#\TESTS\Estudante\Estudante\obj\Debug\Estudante.csproj.CoreCompileInputs.cache
-C:\Users\luide\OneDrive\Documentos\C#\TESTS\Estudante\Estudante\bin\Debug\Estudante.exe.config
-C:\Users\luide\OneDrive\Documentos\C#\TESTS\Estudante\Estudante\bin\Debug\Estudante.exe
-C:\Users\luide\OneDrive\Documentos\C#\TESTS\Estudante\Estudante\bin\Debug\Estudante.pdb
-C:\Users\luide\OneDrive\Documentos\C#\TESTS\Estudante\Estudante\obj\Debug\Estudante.exe
-C:\Users\luide\OneDrive\Documentos\C#\TESTS\Estudante\Estudante\obj\Debug\Estudante.pdb
