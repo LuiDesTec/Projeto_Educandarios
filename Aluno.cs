@@ -14,7 +14,7 @@ namespace Estudante
         {
         }
 
-        public string Matricula { get; set; }// Precisaria ter uma relação com a classe Matricula aqui?
+        public string Matricula { get; set; }
                
 
         public  BoletimNotas boletim { get; set; }
